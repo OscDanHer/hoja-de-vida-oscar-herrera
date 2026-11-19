@@ -2,13 +2,15 @@
 
 Actividad de transferencia de Introducción a los Lenguajes de Internet.
 
+Sitio publicado: https://oscdanher.github.io/hoja-de-vida-oscar-herrera/
+
 El sitio presenta el perfil, la experiencia, la formación y los proyectos del CV de noviembre de 2026. Utiliza HTML, CSS y JavaScript separados.
 
 ## Abrir el sitio
 
 Abrir `index.html` en un navegador o servir la carpeta con un servidor estático. Los enlaces de contacto abren el correo, el teléfono o el perfil seleccionado.
 
-Para publicarlo en GitHub Pages, cargar los archivos en un repositorio y seleccionar la rama `main`, carpeta raíz, en **Settings > Pages**. El archivo `.nojekyll` mantiene la publicación como HTML estático.
+La publicación en GitHub Pages usa la rama `main`, carpeta raíz, en **Settings > Pages**. El archivo `.nojekyll` mantiene la publicación como HTML estático.
 
 ## Archivos
 
