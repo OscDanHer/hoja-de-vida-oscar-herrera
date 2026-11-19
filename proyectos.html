@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Participación de Oscar Herrera en Tecnologías para Aprender, Incluirtec e Interactuar.">
+  <meta name="theme-color" content="#14243a">
+  <title>Proyectos | Oscar Herrera</title>
+  <link rel="icon" href="assets/monograma.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/interacciones.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <a class="marca" href="index.html" aria-label="Oscar Herrera, inicio"><span class="monograma" aria-hidden="true">OH</span>Oscar Herrera</a>
+      <button class="boton-menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú</button>
+      <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
+        <a href="index.html">Perfil</a>
+        <a href="experiencia.html">Experiencia</a>
+        <a href="formacion.html">Formación</a>
+        <a href="proyectos.html" aria-current="page">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+<section class="pagina-intro"><div class="contenedor"><span class="etiqueta">Trabajo en equipo</span><h1>Proyectos.</h1><p class="entrada">Una selección de los proyectos en los que he participado y de los aportes que he realizado.</p></div></section>
+<section class="seccion seccion-blanca" aria-labelledby="seleccion"><div class="contenedor"><h2 id="seleccion">Experiencia en producto.</h2>
+  <form class="filtro" action="proyectos.html" method="get"><div class="campo"><label for="sector">Filtrar por sector</label><select name="sector" id="sector"><option value="todos">Todos los sectores</option><option value="educacion">Educación</option><option value="finanzas">Finanzas</option></select></div><button class="boton boton-secundario" type="submit">Aplicar filtro</button></form>
+  <p class="resultado-filtro" role="status"></p>
+  <div class="proyectos proyectos-detalle">
+    <article class="proyecto" id="tpa" data-sector="educacion"><div class="proyecto-imagen"><img src="assets/educacion.svg" alt="Ilustración conceptual de servicios para el sector educativo" width="800" height="500"></div><span class="tipo-proyecto">Educación · LinkTIC</span><h3>Tecnologías para Aprender</h3><p>Plataforma de alcance nacional con microservicios en la nube y un agente para Windows.</p><p><strong>Mi participación:</strong> desarrollé funcionalidades de punta a punta con .NET y Angular, con foco en seguridad, trazabilidad y manejo de altos volúmenes de datos.</p><details><summary>Ver tecnologías y enfoque</summary><p>.NET, Angular, PostgreSQL, Apache Kafka, Kubernetes y AWS. Mis aportes incluyen control de acceso, procesamiento de eventos, optimización de consultas y mejoras en la sincronización del agente Windows.</p></details></article>
+    <article class="proyecto" id="incluirtec" data-sector="finanzas"><div class="proyecto-imagen"><img src="assets/finanzas.svg" alt="Ilustración conceptual de una plataforma de gestión financiera" width="800" height="500"></div><span class="tipo-proyecto">Finanzas · Six Degrees IT</span><h3>Incluirtec</h3><p>Plataforma SaaS de gestión financiera para vinculación de crédito, generación de reportes y gestión de solicitudes.</p><p><strong>Mi participación:</strong> desarrollé lógica de negocio, integración con bases de datos, interfaces Angular y configuración de despliegue en Azure.</p><details><summary>Ver tecnologías y enfoque</summary><p>.NET 6, Angular 13, SQL Server y Azure DevOps. Participé en la integración entre las reglas de negocio, los datos y la presentación de la información.</p></details></article>
+    <article class="proyecto" id="interactuar" data-sector="finanzas"><div class="proyecto-imagen"><img src="assets/solicitudes.svg" alt="Ilustración conceptual de solicitudes de crédito y servicios API" width="800" height="500" loading="lazy"></div><span class="tipo-proyecto">Finanzas · Six Degrees IT</span><h3>Interactuar</h3><p>Solución de autogestión de solicitudes de crédito para microempresarios.</p><p><strong>Mi participación:</strong> desarrollé servicios API y componentes reutilizables en el frontend. También optimicé consultas para mejorar el rendimiento.</p><details><summary>Ver tecnologías y enfoque</summary><p>.NET 6 y 8, Angular 13 y SQL Server, con integración entre los servicios y los componentes de la aplicación.</p></details></article>
+  </div>
+  <p class="sin-resultados" hidden>No hay proyectos para el sector seleccionado.</p>
+  <p class="nota-proyectos">Las imágenes son ilustraciones de las tecnologías utilizadas. Las descripciones presentan mi participación en cada equipo.</p>
+</div></section>
+  </main>
+  <section class="contacto" id="contacto" aria-labelledby="titulo-contacto">
+    <div class="contenedor">
+      <span class="etiqueta">Contacto</span>
+      <h2 id="titulo-contacto">Podemos conversar.</h2>
+      <p>Puedes escribirme por correo o consultar mi perfil profesional.</p>
+      <div class="contactos">
+        <a href="mailto:oscarhe345@gmail.com">oscarhe345@gmail.com</a>
+        <a href="tel:+573162466879">+57 316 246 6879</a>
+        <a href="https://www.linkedin.com/in/oscar-herrera-dev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/OscDanHer" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </section>
+  <footer class="pie">
+    <div class="contenedor"><span>Oscar Daniel Herrera Peñaloza</span><span>Bogotá, Colombia · 2026</span></div>
+  </footer>
+</body>
+</html>

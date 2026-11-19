@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Práctica local de formularios HTTP</title>
+  <script src="formulario.js" defer></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { max-width: 880px; margin: 3rem auto; padding: 0 1.5rem; color: #14243a; font: 1rem/1.6 "Segoe UI", Arial, sans-serif; }
+    h1 { line-height: 1.2; }
+    form { display: grid; gap: 1rem; padding: 1.5rem; border: 1px solid #c6d0df; border-radius: 6px; }
+    label { display: grid; gap: 0.3rem; font-weight: 600; }
+    input, textarea, button { font: inherit; padding: 0.65rem; }
+    input, textarea { border: 1px solid #9baac0; border-radius: 4px; }
+    button { cursor: pointer; border: 1px solid #244ee5; border-radius: 4px; background: white; color: #14243a; }
+    button:first-child { background: #244ee5; color: white; }
+    .acciones { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #f0f3f8; padding: 1rem; min-height: 100px; }
+    :focus-visible { outline: 3px solid #244ee5; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <p>Introducción a los Lenguajes de Internet · Ejercicio complementario</p>
+  <h1>Formularios con GET, POST y PUT</h1>
+  <p>Esta práctica funciona en el servidor local de Node.js. Los registros se guardan en memoria durante la ejecución. Utilice datos de prueba; no se envían correos.</p>
+  <form id="formulario" action="/api/mensajes" method="post">
+    <label>Nombre<input name="nombre" required maxlength="100"></label>
+    <label>Correo<input name="correo" type="email" required maxlength="150"></label>
+    <label>Mensaje<textarea name="mensaje" rows="3" required maxlength="1000"></textarea></label>
+    <div class="acciones"><button type="submit">Crear registro (POST)</button><button id="consultar" type="button">Consultar registros (GET)</button></div>
+    <label>Identificador para actualizar<input name="id" type="number" min="1" step="1"></label>
+    <button id="actualizar" type="button">Reemplazar registro (PUT)</button>
+  </form>
+  <p id="estado" role="status" aria-live="polite"></p>
+  <pre id="resultado" aria-label="Respuesta del servidor"></pre>
+</body>
+</html>
